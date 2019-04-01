@@ -1,28 +1,23 @@
 package com.nanonator;
 
-public class Ore {
-    private String name = "", description = "";
-    private int amount = 0, worth = 0;
+public class Bar {
+    String name;
+    int amount = 0;
+    int worth = 0;
+    String description = "";
 
-    Ore(String name) {
+    Bar(String name) {
         this.name = name;
     }
-    Ore(String name, int amount, int worth, String description) {
+
+    Bar(String name, int amount, int worth, String description) {
         this.name = name;
         this.amount = amount;
         this.worth = worth;
         this.description = description;
     }
 
-    public int getAmount() {
-        return amount;
-    }
-
-    public void increAmount() {
-        amount++;
-    }
-
-    public void getAmountText() {
+    public void getAmount() {
         System.out.println("You have " + amount + " " + name + ".");
     }
 
@@ -31,5 +26,4 @@ public class Ore {
         System.out.println("One " + name + " is worth " + worth + ".");
         System.out.println(description);
     }
-
 }
