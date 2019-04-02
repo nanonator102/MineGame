@@ -1,16 +1,13 @@
 package com.nanonator;
 
-public class Bar {
-    String name;
-    int amount = 0;
-    int worth = 0;
-    String description = "";
+public class Wood {
+    private String name = "", description = "";
+    private int amount = 0, worth = 0;
 
-    Bar(String name) {
+    Wood(String name) {
         this.name = name;
     }
-
-    Bar(String name, int amount, int worth, String description) {
+    Wood(String name, int amount, int worth, String description) {
         this.name = name;
         this.amount = amount;
         this.worth = worth;
@@ -27,6 +24,10 @@ public class Bar {
 
     public void increAmount() {
         amount++;
+    }
+
+    public void decriAmount() {
+        amount--;
     }
 
     public void setAmount(int amount) {

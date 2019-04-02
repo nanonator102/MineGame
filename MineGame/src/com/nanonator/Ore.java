@@ -18,12 +18,24 @@ public class Ore {
         return amount;
     }
 
+    public void getAmountText() {
+        System.out.println("You have " + amount + " " + name + ".");
+    }
+
     public void increAmount() {
         amount++;
     }
 
-    public void getAmountText() {
-        System.out.println("You have " + amount + " " + name + ".");
+    public void decriAmount() {
+        amount--;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public int getWorth() {
+        return worth;
     }
 
     public void printInfo() {
